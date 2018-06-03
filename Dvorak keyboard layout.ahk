@@ -1,3 +1,18 @@
+; 用于启用Norman或者QWERTY
+#d::
+  Suspend Permit
+  Suspend Off
+  Menu, Tray, Tip, KB - Dvorak
+  return
+
+#q::
+  Suspend Permit
+  Suspend On
+  Menu, Tray, Tip, KB - QWERTY
+  return
+
+;; Dvorak Keyboard Layout
+
 -::[
 =::]
 
