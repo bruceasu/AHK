@@ -1,3 +1,20 @@
+; Use Scroll Lock to swap keyboard layouts
+; and do not let Control, Alt, or Win modifiers act on Dvorak
+Loop {
+   If !GetKeyState("ScrollLock", "T")
+   and !GetKeyState("Control")
+   and !GetKeyState("Alt")
+   and !GetKeyState("LWin")
+   and !GetKeyState("RWin") {
+      Suspend, Off
+   } else {
+      Suspend, On
+   }
+   Sleep, 50
+}
+
+; QWERTY to Dvorak mapping
+
 ; 用于启用Norman或者QWERTY
 #d::
   Suspend Permit
